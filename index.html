@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio e Sistema de OS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jean Gabriel Faria</h1>
+        
+        <p>E aí! Meu nome é Jean Gabriel Faria, tenho 20 anos e sou de Curitiba, PR. Sou um entusiasta da tecnologia estudando Análise e Desenvolvimento de Sistemas, e simplesmente amo desvendar o universo da programação. Me empolgo demais aprendendo linguagens novas e transformando ideias em soluções criativas para o dia a dia. Meu grande objetivo é me tornar um Q.A., e tenho certeza que a Uninter vai me dar todo o suporte pra chegar lá!</p>
+        
+        <button id="mensagemBtn">Clique para ver uma mensagem!</button>
+        <div id="mensagem"></div>
+        
+        <h2>Meus Hobbies</h2>
+        <ul>
+            <li>Natação</li>
+            <li>Esportes eletrônicos</li>
+            <li>Programação e testes</li>
+        </ul>
+        
+        <img src="Imagens/Foto Jean.jpg" alt="Foto Jean">
+        
+        <h2>Países que quero visitar</h2>
+        <table>
+            <tr>
+                <th>País</th>
+                <th>Imagem</th>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td><img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nationalgeographic2743988.jpg?w=1600" alt="Itália"></td>
+            </tr>
+            <tr>
+                <td>Suiça</td>
+                <td><img src="https://paradisoturismo.com.br/wp-content/uploads/2021/09/swiss9-1924x1283.jpg" alt="Suiça"></td>
+            </tr>
+            <tr>
+                <td>Holanda</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQVBvDWOBzKJz9v_RAqVXll0XNWuddVWsbQ&s" alt="Holanda"></td>
+            </tr>
+        </table>
+        
+        <a href="https://github.com/Jota-qa" target="_blank">Visite meu GitHub</a>
+        
+        <!-- Seção adicional do sistema de ordens de serviço -->
+        <div class="os-system">
+            <h2>Sistema de Ordens de Serviço</h2>
+            
+            <div class="form-group">
+                <label for="vendedor">Vendedor:</label>
+                <input type="text" id="vendedor">
+            </div>
+            
+            <div class="form-group">
+                <label for="cliente">Cliente:</label>
+                <input type="text" id="cliente">
+            </div>
+            
+            <div class="form-group">
+                <label for="servico">Serviço:</label>
+                <select id="servico">
+                    <option value="">Selecione...</option>
+                    <option value="manutencao">Manutenção</option>
+                    <option value="instalacao">Instalação</option>
+                    <option value="consulta">Consulta Técnica</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="valor">Valor Total:</label>
+                <input type="number" id="valor" step="0.01">
+            </div>
+            
+            <div class="form-group">
+                <label for="parcelas">Parcelas:</label>
+                <select id="parcelas">
+                    <option value="1">À vista</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                </select>
+            </div>
+            
+            <button id="gerarOS">Gerar Ordem de Serviço</button>
+            
+            <div id="osResult"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
